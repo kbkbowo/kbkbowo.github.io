@@ -47,14 +47,14 @@
     the homepage of the professor who I am currently working with, Professor Shao-Hua Sun.<br>
     <br>
 
-    <audio src="bgm.mp3" autoplay="true" controls></audio>
+    <audio src="bgm.mp3" autoplay="true" loop="true" controls></audio>
 
     <p>Current time: <span id="datetime"></span></p>
 
     <script>
         function showTime() {
             var dt = new Date();
-            document.getElementById("datetime").innerHTML = (((dt.getMonth() + 1))) + "-" + (("0" + dt.getDate()).slice(-2)) + "-" + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
+            document.getElementById("datetime").innerHTML = (dt.getMonth() + 1) + "-" + (("0" + dt.getDate()).slice(-2)) + "-" + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
         }
         setInterval(showTime, 1000);
     </script>
