@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="image/x-icon" href="icon.png" />
+    <meta charset="UTF-8"></meta>
+    <title>Home</title>
+</head>
+
+<style>
+    a:hover {
+        color: rgb(255, 0, 0);
+    }
+</style>
+
+<body>
+    <h1 align="center">MyHomePage</h1>
+    <img src="./profile.jpg" style="float: left; margin-right: 100px; margin-left: 100px; margin-bottom: 1000px" height="200" width="200" alt="Me">
+
+    <h3>About me</h3>
+    Hello there, my name is Po-Chen Ko(柯柏辰). I've been living in Taiwan since I was born.<br> I graduated from
+    <link>
+    <a href="https://www.chsh.chc.edu.tw/">Changhua Senior Highschool</a>
+    </link>
+    two years ago, and is now a student of
+    <link>
+    <a href="https://web.ee.ntu.edu.tw/">NTUEE.</a>
+    </link>
+    <br>
+
+    <h3>My hobbies</h3>
+    I like to play video games very much, and I've played a variety of games in my life.<br> Recently, I mostly play simulation and great strategy games, such as HOI4 and Stelleris.<br> I am also a fan of Monster Hunter World, I've spent my whole summer
+    vacation last year on it.<br> This is
+    <link>
+    <a href="https://steamcommunity.com/profiles/76561198799141249/">my Steam homepage.</a>
+    </link><br>
+    <br> Besides PC games, I also play some rhythm games on mobile, recently Project Sekai.<br> Their official youtube channel is
+    <link>
+    <a href="https://www.youtube.com/channel/UCdMGYXL38w6htx6Yf9YJa-w">here,</a>
+    </link>
+    I really like their vocaloid and JPOP songs cover.<br> These covers are masterpiece to me.<br>
+    <br> I also love studying ML and AI, and I'm currently learning about reinforcement learning in my special project.<br>
+    <link>
+    <a href="https://shaohua0116.github.io/">Here's</a>
+    </link>
+    the homepage of the professor who I am currently working with, Professor Shao-Hua Sun.<br>
+    <br>
+
+    <audio src="bgm.mp3" autoplay="true" controls></audio>
+
+    <p>Current time: <span id="datetime"></span></p>
+
+    <script>
+        function showTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (((dt.getMonth() + 1))) + "-" + (("0" + dt.getDate()).slice(-2)) + "-" + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
+        }
+        setInterval(showTime, 1000);
+    </script>
+</body>
+
+</html>
